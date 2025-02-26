@@ -41,7 +41,8 @@ function Profile({ membersList, setMembersList }) {
   const { updateDocument, changeUserPassword } = useFirestore("users");
   /////////////////////////////////
   const uploadImageToImgBB = async (imageFile) => {
-    const apiKey = "70f0f6cfb0b0cfb2e1a67e2aa7639ba3";
+    const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
+
     const formData = new FormData();
     formData.append("image", imageFile);
 

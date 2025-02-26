@@ -8,7 +8,8 @@ export async function fetchBooksData(
     return { items: [], totalItems: 0 };
   }
 
-  const apiKey = "AIzaSyCguQyg53PqQLWoBDK9jpvy2QRh4jG3o64";
+  const apiKey = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
+
   const url = `https://www.googleapis.com/books/v1/volumes?q=${selectedOption}:${encodedName}&startIndex=${startIndex}&maxResults=20&key=${apiKey}`;
 
   try {

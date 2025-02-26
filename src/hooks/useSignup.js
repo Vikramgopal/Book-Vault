@@ -3,7 +3,8 @@ import { auth } from "../firebase/config";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 const uploadImageToImgBB = async (imageFile) => {
-  const apiKey = "70f0f6cfb0b0cfb2e1a67e2aa7639ba3"; // Replace with your API key
+  const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
+
   const formData = new FormData();
   formData.append("image", imageFile);
 
