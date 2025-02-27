@@ -7,8 +7,8 @@ function Logo() {
     navigate("/app");
   };
   return (
-    <div onClick={handleClick} className="cursor-pointer">
-      LOGO
+    <div onClick={handleClick} className="cursor-pointer w-28 max-sm:w-24 ">
+      <img src="src/assets/Litloom-logo.png" alt="litloom"></img>
     </div>
   );
 }
