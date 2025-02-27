@@ -108,7 +108,7 @@ function SingleBookData({ singleBook, membersList }) {
   }
 
   return (
-    <div className="p-8  mt-28 mb-5 bg-[#c7c3dc] rounded-lg shadow-md max-w-6xl text-gray-700 mx-4 xl:mx-auto">
+    <div className="p-8  mt-28 mb-5 max-sm:mb-3 bg-[#c7c3dc] rounded-lg shadow-md max-w-6xl text-gray-700 mx-4 xl:mx-auto">
       <div className="  flex flex-col md:flex-row lg:gap-16 gap-8  mb-8">
         {singleBook.imageLinks?.thumbnail ? (
           <img

@@ -16,7 +16,7 @@ function SavedBooks() {
   }, [location.pathname]);
 
   return (
-    <div className="flex flex-col items-center justify-start pt-4 h-[calc(100vh-12vh)] bg-[#918ca9] text-white ">
+    <div className="flex flex-col items-center justify-start pt-4 h-[calc(100vh-12vh)] max-sm::h-[calc(100vh-10vh)] bg-[#918ca9] text-white ">
       {/* Button Group - Centered */}
       <div className="bg-[#c7c3dc] flex w-80 justify-between font-lato rounded-full p-[6px] shadow-xl mb-6">
         <button

@@ -133,7 +133,7 @@ function BookOfTheDay({ bookOfTheDay, setBookOfTheDay }) {
     }
   }, [setBookOfTheDay]);
   return (
-    <div className="flex flex-col w-full  md:h-[calc(100vh-12vh)] p-6">
+    <div className="flex flex-col w-full max-sm:h-[calc(100vh-10vh)] md:h-[calc(100vh-12vh)] p-6">
       {/* Title */}
       <h2 className="text-3xl font-cinzel font-semibold text-black text-left mb-5">
         Book of the Day
