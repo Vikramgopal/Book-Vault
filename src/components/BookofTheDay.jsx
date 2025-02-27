@@ -133,7 +133,7 @@ function BookOfTheDay({ bookOfTheDay, setBookOfTheDay }) {
     }
   }, [setBookOfTheDay]);
   return (
-    <div className="flex flex-col w-full max-sm:h-[calc(100vh-10vh)] md:h-[calc(100vh-12vh)] p-6">
+    <div className="flex flex-col w-full  md:h-[calc(100vh-12vh)] p-6">
       {/* Title */}
       <h2 className="text-3xl font-cinzel font-semibold text-black text-left mb-5">
         Book of the Day
@@ -178,9 +178,10 @@ function BookOfTheDay({ bookOfTheDay, setBookOfTheDay }) {
               <p className="text-xl text-[#EAEAEA] font-montserrat font-medium mb-2">
                 <strong>Author:</strong> {bookOfTheDay.author}
               </p>
-              <p className="text-md mb-4 max-h-[70%] text-[#EAEAEA] overflow-y-scroll font-ubuntu scrollbar-hide">
+              <p className="text-md mb-4 h-[280px] max-h-[280px] text-[#EAEAEA] overflow-y-auto overflow-x-hidden scrollbar-hide font-ubuntu">
                 {bookOfTheDay.description}
               </p>
+
               <a
                 href={bookOfTheDay.link}
                 target="_blank"

@@ -94,7 +94,7 @@ function PageNav({
 
   return (
     <>
-      <nav className=" px-8 flex justify-between items-center bg-white/30 backdrop-blur-md border-b border-gray-200 shadow-lg w-full h-[12vh] max-sm:h-[10vh] fixed top-0 left-0 z-50">
+      <nav className=" px-8 flex justify-between items-center bg-white/30 backdrop-blur-md border-b border-gray-200 shadow-lg w-full h-[12vh]  fixed top-0 left-0 z-50">
         {/* Logo */}
         <Logo />
 

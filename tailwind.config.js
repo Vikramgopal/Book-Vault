@@ -24,7 +24,7 @@ export default {
         },
       },
       images: {
-        litloomlogo: "url(`/src/assets/litloom-logo.png`)",
+        // litloomlogo: "url('src/assets/Litloom.png')",
         backgroundImage: {
           "login-bg": "url('/src/assets/login-bg.jpg')",
         },
