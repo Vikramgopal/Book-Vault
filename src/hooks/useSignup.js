@@ -46,7 +46,8 @@ export const useSignup = () => {
   }) => {
     try {
       // First, upload the profile image to ImgBB
-      const profileImageUrl = await uploadImageToImgBB(profileImage);
+      // const profileImageUrl = await uploadImageToImgBB(profileImage);
+       const profileImageUrl = (await uploadImageToImgBB(profileImage)) || ""; // Default to an empty string instead of returning
       if (!profileImageUrl) {
         console.error("Image upload failed");
         return;
